@@ -15,9 +15,92 @@
 			"url": "https://twitter.com/"
 		}
 	],
+	"steeringGroup": [
+		{
+			"src": "steering-group-bp.jpg",
+			"width": "228",
+			"height": "275",
+			"alt": "BP Oil industry company",
+			"link": "https://www.bp.com/"
+		},
+		{
+			"src": "steering-group-eq.jpg",
+			"width": "293",
+			"height": "198",
+			"alt": "EnQuest Production company",
+			"link": "https://www.enquest.com/"
+		},
+		{
+			"src": "steering-group-equinor.jpg",
+			"width": "697",
+			"height": "274",
+			"alt": "Equinor Petroleum refining company",
+			"link": "https://www.equinor.com/en.html"
+		},
+		{
+			"src": "steering-group-spe.jpg",
+			"width": "728",
+			"height": "247",
+			"alt": "Siccar Point Energy Limited",
+			"link": "https://www.siccarpointenergy.co.uk/"
+		},
+		{
+			"src": "steering-group-shell.jpg",
+			"width": "224",
+			"height": "202",
+			"alt": "Royal Dutch Shell",
+			"link": "https://www.shell.com/"
+		},
+		{
+			"src": "steering-group-sse.jpg",
+			"width": "478",
+			"height": "227",
+			"alt": "Scottish and Southern Energy",
+			"link": "https://www.sse.com/"
+		},
+		{
+			"src": "steering-group-total.jpg",
+			"width": "682",
+			"height": "176",
+			"alt": "Total",
+			"link": "https://www.total.com/"
+		}
+	],
 	"partners": [
 		{
-			"src": ""
+			"src": "partner-orion.jpg",
+			"width": "600",
+			"height": "113",
+			"alt": "Orion Clean Energy",
+			"link": "https://www.orionrenewables.com/projects"
+		},
+		{
+			"src": "partner-sic.jpg",
+			"width": "424",
+			"height": "170",
+			"alt": "Shetland Islands Council",
+			"link": "https://www.shetland.gov.uk/"
+		},
+		{
+			"src": "partner-ogtc.jpg",
+			"width": "366",
+			"height": "237",
+			"alt": "The Oil & Gas Technology Centre",
+			"link": "https://www.ogtc.com/"
+		},
+		{
+			"src": "partner-hie.jpg",
+			"width": "166",
+			"height": "210",
+			"alt": "Highlands and Islands Enterprise",
+			"link": "https://www.hie.co.uk/"
+		},
+		{
+			"src": "partner-usg.jpg",
+			"width": "344",
+			"height": "252",
+			"alt": "University of Strathclyde Glasgow",
+			"link": "https://www.strath.ac.uk/"
 		}
 	],
 	"items": {
