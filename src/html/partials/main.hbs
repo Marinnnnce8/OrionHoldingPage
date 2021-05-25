@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-gb" class="template-{{page.template.name}}">
+<head>
+	<meta name="robots" content="noindex, nofollow">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>{{page.meta_title}}</title>
+
+	<meta name="description" content="This page is called {{page.title}}">
+
+	<link rel="shortcut icon" href="./favicon.ico">
+
+	<link rel="stylesheet" href="./css/uikit-theme.min.css" />
+	<link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body class="uk-background-cover" data-uk-img style="background-image: url('./img/cover-image-2.jpg');">
+
+	<header class="header">
+		{{#> ukContainer size=(default size (default page.ukContainer ukContainer))}}
+			{{#*inline "out"}}		
+			<nav class="uk-navbar-container uk-navbar-transparent uk-navbar" data-uk-navbar>
+				<div class="uk-navbar-left">
+					<a href="./" class="uk-logo">
+						<img src="./img/partner-orion.jpg" alt="{{nb.siteName}} Logo">
+					</a>
+				</div>
+
+				{{#if menu}}
+				<div class="uk-navbar-right">
+					<div id="nav">
+						{{> renderNavigation}}
+					</div>
+					<a href="#nav" class="uk-navbar-toggle" data-uk-toggle="animation: uk-animation-slide-left;" aria-label="Toggle Navigation" hidden>
+						<span data-uk-navbar-toggle-icon></span>
+					</a>
+				</div>
+				{{/if}}
+
+			</nav>
+		{{/inline}}
+		{{/ukContainer}}
+	</header>
+
+	<main class="uk-margin-bottom">
+
+		{{#if page.banner}}
+			{{> banner}}
+		{{else}}
+			{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
+				{{#*inline "out"}}
+					<h1>{{page.h1}}</h1>
+					{{> ukBreadcrumb}}
+				{{/inline}}
+			{{/ukContainer}}
+		{{/if}}
+
+		{{#> main}}{{/main}}
+
+	</main>
+
+	<footer class="footer uk-padding-large uk-padding-remove-horizontal">
+		{{#> ukContainer class="uk-text-center"}}
+			{{#*inline "out"}}
+
+			{{#if partners}}
+			<div class="partners uk-flex uk-flex-middle uk-flex-wrap uk-margin-small-bottom">
+				<span class="uk-text-bold">In partnership with:</span>
+				<ul>
+				{{#each partners}}
+					<li>
+						<a href="#">
+							<img src="./img/{{this.src}}" loading="lazy" width="{{this.width}}" height="{{this.height}}" alt="{{this.alt}}">
+						</a>
+					</li>
+				{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+
+			{{/inline}}
+		{{/ukContainer}}
+	</footer>
+
+	<script src="./js/uikit.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

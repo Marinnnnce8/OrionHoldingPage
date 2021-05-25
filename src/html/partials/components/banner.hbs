@@ -1,0 +1,26 @@
+<div class="banner uk-position-relative">
+	{{#> ukContainer size=(default page.banner.size (default page.ukContainer ukContainer))}}
+		{{#*inline "out"}}
+		<div class="uk-width-2-3@m">
+			<h1>{{page.h1}}</h1>
+			<p class="uk-text-lead uktext-bold uk-margin-large-bottom">{{page.qouteText}}</p>
+			<p>Orion – Opportunity Renewable Integration Offshore Networks – is an ambitious project that aims to transform Shetland into the home of secure and affordable clean energy. </p>
+			<p>The goal is to harness the potential of Shetland’s natural resources by using onshore and offshore wind, tidal and wave energy to fuel a cleaner future.</p>
+			<p>Orion will capitalise on Shetland’s prime location, energy industry and marine expertise and the community’s desire and ambition to become a world-leading clean energy island.</p>
+			<p>The project aims to generate affordable and secure clean heat and power, develop and sustain high-quality jobs and deliver decades of diverse economic growth.</p>
+			<h2>Orion’s aims</h2>
+			<ul class="uk-list uk-list-disc">
+				<li>Produce wind-powered <strong>green hydrogen</strong> in Shetland by 2025;</li>
+				<li><strong>Reduce emissions</strong> and become net zero by 2030;</li>
+				<li>Create and sustain 500 <strong>net zero jobs</strong> by 2030;</li>
+				<li>Create a buoyant, <strong>diverse economy</strong> for Shetland by 2035.</li>
+			</ul>
+			<h2>Community benefits</h2>
+			<p>The bold vision is that Orion will secure jobs for the future while creating and supplying clean and affordable energy, with a focus on producing green hydrogen. </p>
+			<h2>Industry benefits</h2>
+			<p>Working with strategic and industry partners Orion aims to put Shetland at the cutting-edge of developing clean energy projects as part of a net-zero future by harnessing the potential in Shetland’s natural resources to produce renewable energy and hydrogen.</p>
+			{{#if (neq page.name "home")}}{{> ukBreadcrumb}}{{/if}}
+		</div>
+		{{/inline}}
+	{{/ukContainer}}
+</div>

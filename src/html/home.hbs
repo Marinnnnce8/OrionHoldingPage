@@ -1,0 +1,77 @@
+{{#> main}}
+	{{#*inline "main"}}
+
+	{{#> ukSection heading="Recent News and Upcoming Events" sectionClass="latest-news" size="xsmall"}}
+		{{#*inline "out"}}
+
+		<ul class="uk-list uk-list-disc">
+			<li>
+				<a class="uk-button uk-button-text" href="https://cld.bz/Hnu6h1w/21" target="_blank" rel="noreferrer noopener">Recent News and Upcoming Events</a>
+			</li>
+			<li>
+				<a class="uk-button uk-button-text" href="https://www.energyvoice.com/renewables-energy-transition/wind/uk-wind/293179/west-of-shetland-electrification-net-zero-orion/" target="_blank" rel="noreferrer noopener">Energy Voice</a>
+			</li>
+			<li>
+				<a class="uk-button uk-button-text" href="https://www.shetnews.co.uk/2021/02/24/hydrogen-a-future-for-the-isles-beyond-petroleum/" target="_blank" rel="noreferrer noopener">Shetland News</a>
+			</li>
+		</ul>
+
+		{{/inline}}
+	{{/ukSection}}
+
+	{{#> nbForm size="xsmall"}}
+		{{#*inline "form"}}
+
+		<div>
+
+			<form id="nb-form-{{page.name}}" class="uk-form-stacked InputfieldForm" method="post" data-uk-nb-form novalidate data-colspacing="1">
+
+				<h2>Sign up to our newsletter</h2>
+
+				{{#> ukGrid class="uk-grid uk-child-width-1-2@m"}}
+					{{#*inline "cells"}}
+
+					{{> nbInput label="First Name" name="name" title="Please enter your first name"}}
+
+					{{> nbInput label="Last Name" name="last_name" title="Please enter your last name"}}
+
+					{{> nbInput label="Email Address<span> *</span>" name="email" type="email" title="Please enter a valid email address"}}
+
+					{{> nbInput label="Address" name="address" title="Please enter your address"}}
+
+					{{> nbInput label="Postcode" name="postcode" title="Please enter your postcode"}}
+
+					{{> nbInput label="Telephone Number" title="Please enter your telephone number" name="tel" type="tel" }}
+
+					{{/inline}}
+				{{/ukGrid}}
+
+				<h3>Marketing Permissions</h3>
+
+				<p class="uk-text-small uk-text-primary">Please select all the ways you would like to hear from the Tall Ships Races :</p>
+
+				<div class="uk-margin uk-child-width-auto">
+					<div class="uk-grid-small uk-margin-bottom">
+						<label><input class="uk-checkbox" type="checkbox" checked> Email</label>
+					</div>
+					<div class="uk-grid-small uk-margin-bottom">
+						<label><input class="uk-checkbox" type="checkbox"> Direct Mail</label>
+					</div>
+					<div class="uk-grid-small uk-margin-bottom">
+						<label><input class="uk-checkbox" type="checkbox"> Telephone</label>
+					</div>
+				</div>
+
+				<p class="uk-text-small uk-text-primary">You can unsubscribe at any time by clicking the link in the footer of our emails.</p>
+
+				<p class="uk-text-small uk-text-primary">We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="#" target="_blank" rel="noreferrer noopener">Learn more about Mailchimp's privacy practices here.</a></p>
+
+			</form>
+
+		</div>
+
+		{{/inline}}
+	{{/nbForm}}
+
+	{{/inline}}
+{{/main}}

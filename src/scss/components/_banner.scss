@@ -1,0 +1,7 @@
+.banner {
+    padding-top: 50px;
+
+    @media (min-width: $breakpoint-small) {
+        padding-top: 150px;
+    }
+}

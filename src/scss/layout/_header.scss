@@ -1,0 +1,19 @@
+.header {
+	padding-top: 60px;
+
+	.uk-logo {
+
+		img {
+			max-width: 228px;
+			width: 100%;
+			filter: invert(1);
+			mix-blend-mode: lighten;
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		.uk-logo img {
+			max-width: 265px;
+		}
+	}
+}
