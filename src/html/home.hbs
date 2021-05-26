@@ -28,43 +28,23 @@
 
 				<h2>Sign up to our newsletter</h2>
 
-				{{#> ukGrid class="uk-grid uk-child-width-1-2@m"}}
+				{{#> ukGrid class="uk-grid uk-child-width-1-2@m uk-margin-bottom"}}
 					{{#*inline "cells"}}
 
 					{{> nbInput label="First Name" name="name" title="Please enter your first name"}}
 
-					{{> nbInput label="Last Name" name="last_name" title="Please enter your last name"}}
+					{{> nbInput label="Surname" name="surname" title="Please enter your surname"}}
 
 					{{> nbInput label="Email Address<span> *</span>" name="email" type="email" title="Please enter a valid email address"}}
 
-					{{> nbInput label="Address" name="address" title="Please enter your address"}}
+					{{> nbInput label="Subject" name="subject" title="Please enter subject of your message"}}
 
-					{{> nbInput label="Postcode" name="postcode" title="Please enter your postcode"}}
-
-					{{> nbInput label="Telephone Number" title="Please enter your telephone number" name="tel" type="tel" }}
+					{{> nbInput label="Your Enquiry" name="enquiry" type="textarea" title="Please enter your enquiry"}}
 
 					{{/inline}}
 				{{/ukGrid}}
 
-				<h3>Marketing Permissions</h3>
-
-				<p class="uk-text-small uk-text-primary">Please select all the ways you would like to hear from Orion:</p>
-
-				<div class="uk-margin uk-child-width-auto">
-					<div class="uk-grid-small uk-margin-bottom">
-						<label><input class="uk-checkbox" type="checkbox" checked> Email</label>
-					</div>
-					<div class="uk-grid-small uk-margin-bottom">
-						<label><input class="uk-checkbox" type="checkbox"> Direct Mail</label>
-					</div>
-					<div class="uk-grid-small uk-margin-bottom">
-						<label><input class="uk-checkbox" type="checkbox"> Telephone</label>
-					</div>
-				</div>
-
-				<p class="uk-text-small uk-text-primary">You can unsubscribe at any time by clicking the link in the footer of our emails.</p>
-
-				<p class="uk-text-small uk-text-primary">We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="#" target="_blank" rel="noreferrer noopener">Learn more about Mailchimp's privacy practices here.</a></p>
+				{{> nbInput name="submit" type="submit" value="Send"}}
 
 			</form>
 
