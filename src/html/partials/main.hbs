@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="format-detection" content="telephone=no">
 
-	<title>{{page.meta_title}}</title>
+	<title>Orion - Clean Energy Project</title>
 
-	<meta name="description" content="This page is called {{page.title}}">
+	<meta name="description" content="Orion is an ambitious project that aims to transform Shetland into the home of secure and affordable clean energy.">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -20,8 +20,25 @@
 
 	<link rel="stylesheet" href="./css/uikit-theme.min.css" />
 	<link rel="stylesheet" href="./css/main.min.css" />
+
+	<style>
+		body {
+			background-color: #00041d; 
+			background-size: cover; 
+			background-image: url('./img/bg-mobile.jpg'); 
+			background-position: 94% 0%;
+		}
+		@media (min-width: 960px) {
+			body {
+				background-image: url('./img/bg-desktop.jpg'); 
+				background-position: 75% 0%;
+			}
+		}
+	</style>
 </head>
-<body class="uk-background-cover" data-uk-img style="background-image: url('./img/cover-image-2.jpg');">
+
+<!--<body class="uk-background-cover" data-uk-img style="background-image: url('./img/cover.jpg');">-->
+<body>
 
 	<header class="header">
 		{{#> ukContainer size=(default size (default page.ukContainer ukContainer))}}
@@ -29,7 +46,7 @@
 			<nav class="uk-navbar-container uk-navbar-transparent uk-navbar" data-uk-navbar>
 				<div class="uk-navbar-left">
 					<a href="./" class="uk-logo">
-						<img src="./img/partner-orion.jpg" width="600" height="113" alt="{{nb.siteName}} Logo">
+						<img src="./img/partner-orion.jpg" width="600" height="113" alt="Orion - Clean Energy Project">
 					</a>
 				</div>
 
@@ -57,7 +74,6 @@
 			{{#> ukContainer size=(default page.ukContainer ukContainer) class="uk-margin-top"}}
 				{{#*inline "out"}}
 					<h1>{{page.h1}}</h1>
-					{{> ukBreadcrumb}}
 				{{/inline}}
 			{{/ukContainer}}
 		{{/if}}

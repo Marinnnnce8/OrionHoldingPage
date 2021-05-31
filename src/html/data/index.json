@@ -1,4 +1,9 @@
 {
+	"h1": "Orion – Building a world-leading clean energy island",
+	"qouteText": "“Securing a prosperous future for Shetland by providing affordable clean energy, creating and sustaining high-quality jobs.”",
+	"banner": {
+		"size": "large"
+	},
 	"nb": {
 		"siteName": "Orion - Clean Energy Project",
 		"clientName": "Orion"
@@ -67,13 +72,6 @@
 		}
 	],
 	"partners": [
-		{
-			"src": "partner-orion.jpg",
-			"width": "600",
-			"height": "113",
-			"alt": "Orion Clean Energy",
-			"link": "https://www.orionrenewables.com/projects"
-		},
 		{
 			"src": "partner-sic.jpg",
 			"width": "424",

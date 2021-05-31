@@ -7,8 +7,14 @@ body {
 	overflow-x: hidden;
 
 	* {
-		text-shadow: 0 1px 14px rgba($blue, .8);
+		text-shadow: 0 1px 10px rgba(0, 4, 29, .9);
 	}
+}
+
+input,
+textarea,
+button {
+	text-shadow: none;
 }
 
 * {

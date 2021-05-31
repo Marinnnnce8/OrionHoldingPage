@@ -1,0 +1,59 @@
+{{#> main}}
+	{{#*inline "main"}}
+
+	{{#> ukSection heading="Recent News and Upcoming Events" sectionClass="latest-news" size="large"}}
+		{{#*inline "out"}}
+
+		<ul class="uk-list uk-list-disc">
+			<li>
+				<a class="uk-button uk-button-text" href="https://cld.bz/Hnu6h1w/21" target="_blank" rel="noreferrer noopener">Recent News and Upcoming Events</a>
+			</li>
+			<li>
+				<a class="uk-button uk-button-text" href="https://www.energyvoice.com/renewables-energy-transition/wind/uk-wind/293179/west-of-shetland-electrification-net-zero-orion/" target="_blank" rel="noreferrer noopener">Energy Voice</a>
+			</li>
+			<li>
+				<a class="uk-button uk-button-text" href="https://www.shetnews.co.uk/2021/02/24/hydrogen-a-future-for-the-isles-beyond-petroleum/" target="_blank" rel="noreferrer noopener">Shetland News</a>
+			</li>
+		</ul>
+
+		{{/inline}}
+	{{/ukSection}}
+
+	{{#> nbForm size="large"}}
+		{{#*inline "form"}}
+
+		<div class="uk-width-2-3@m uk-margin-auto uk-padding uk-padding-remove-horizontal">
+
+			<form id="nb-form-{{page.name}}" class="uk-form-stacked InputfieldForm" method="post" data-uk-nb-form novalidate data-colspacing="1" name="contact" data-netlify-recaptcha="true" data-netlify="true">
+
+				<h2>Contact Us</h2>
+
+				{{#> ukGrid class="uk-grid uk-child-width-1-2@m uk-margin-bottom"}}
+					{{#*inline "cells"}}
+
+					{{> nbInput label="First Name" name="name" title="Please enter your first name"}}
+
+					{{> nbInput label="Surname" name="surname" title="Please enter your surname"}}
+
+					{{> nbInput label="Email Address<span> *</span>" name="email" type="email" title="Please enter a valid email address"}}
+
+					{{> nbInput label="Subject" name="subject" title="Please enter subject of your message"}}
+
+					{{> nbInput label="Your Enquiry" name="enquiry" type="textarea" title="Please enter your enquiry"}}
+
+					{{/inline}}
+				{{/ukGrid}}
+
+				<div data-netlify-recaptcha="true"></div>
+
+				{{> nbInput name="submit" type="submit" value="Send"}}
+
+			</form>
+
+		</div>
+
+		{{/inline}}
+	{{/nbForm}}
+
+	{{/inline}}
+{{/main}}
